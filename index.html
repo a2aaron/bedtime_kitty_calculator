@@ -5,10 +5,37 @@
     <title>Bedtime Kitty Quote Calculator</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/main.css" />
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Bedtime Kitty Quote Calculator</h1>
+    <p>
+        <label for="pin-quantity">Pin quantity:</label>
+        <select id="pin-quantity">
+            <option value="50">50 pins ($385)</option>
+            <option value="75">75 pins ($445)</option>
+            <option value="100">100 pins ($490)</option>
+            <option value="200">200 pins ($625)</option>
+        </select>
+    </p>
+    <p>
+        <label for="shipping-destination">Shipping destination:</label>
+        <select id="shipping-destination">
+            <option value="unitedstates">United States ($15)</option>
+            <option value="canada">Canada ($25)</option>
+            <option value="mexico">Mexico ($25)</option>
+            <option value="europe">Europe ($28)</option>
+            <option value="asia">Asia ($28)</option>
+            <option value="other">Other (varies!)</option>
+        </select>
+    </p>
+    <p>
+        <label for="add-cutout">Add a cutout? ($15)</label>
+        <input type="checkbox" id="add-cutout" name="add-cutout">
+    </p>
+    <p id="total-price">$0.00</p>
 </body>
 
 </html>

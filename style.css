@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { max-width: 1200px; margin: 0 auto; padding: 0.5em; }
+
+f-row, .row { display: flex; flex-direction: row; }
+f-col, .col { display: flex; flex-direction: column; }
+f-sp, .spacer { flex: 1; }
+
+.gap-1 { gap: 0.5em; }
+.gap-2 { gap: 1em; }
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
+    grid-template-rows: fit-content(0);
+}
